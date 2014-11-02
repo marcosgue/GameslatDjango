@@ -14,4 +14,3 @@ class Cliente(models.Model):
     state = models.CharField(max_length=25, blank=True)
     postal_code = models.CharField(max_length=8, blank=True)
     points = models.PositiveIntegerField()
-    es_favorito = models.BooleanField(default=False)
