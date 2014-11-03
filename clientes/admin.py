@@ -10,5 +10,5 @@ class ClienteAdmin(admin.ModelAdmin):
         'last_name',
         'DNI_CUIT',
         'phone',
-        'points'
+        'points',
     )

@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'clientes',
+    'locales',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,3 +87,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Media configuration
+MEDIA_ROOT = '/Library/WebServer/www/gameslat/media/'
+
+MEDIA_URL = '/media/'
