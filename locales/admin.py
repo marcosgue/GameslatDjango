@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Store
+from .models import Store, Puesto
 
 
 @admin.register(Store)
@@ -12,4 +12,11 @@ class StoreAdmin(admin.ModelAdmin):
         'DNI_CUIT',
         'points',
         'logo_img',
+    )
+
+
+@admin.register(Puesto)
+class PuestoAdmin(admin.ModelAdmin):
+    list_display = (
+        'puesto',
     )

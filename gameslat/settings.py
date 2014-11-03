@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'clientes',
     'locales',
+    'userprofiles',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -92,3 +93,6 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = '/Library/WebServer/www/gameslat/media/'
 
 MEDIA_URL = '/media/'
+
+# EXTENDEMOS LOS PERFILES DE USUARIO CON UserProfiles
+AUTH_PROFILE_MODULE = 'userprofiles.UserProfile'

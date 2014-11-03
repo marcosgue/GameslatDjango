@@ -14,3 +14,7 @@ class Store(models.Model):
     state = models.CharField(max_length=25, blank=True)
     postal_code = models.CharField(max_length=8, blank=True)
     points = models.PositiveIntegerField()
+
+
+class Puesto(models.Model):
+    puesto = models.CharField(max_length=15)
